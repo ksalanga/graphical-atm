@@ -89,4 +89,23 @@ public class ViewManager {
 			e.printStackTrace();
 		}
 	}
+	
+	public void logout() {
+        try {            
+            int choice = JOptionPane.showConfirmDialog(
+                views,
+                "Are you sure?",
+                "Shutdown ATM",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE
+            );
+            
+            if (choice == 0) {
+                account = null;
+                switchTo(ATM.LOGIN_VIEW);
+            }
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+        }
 }
