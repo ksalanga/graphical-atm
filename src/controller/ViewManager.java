@@ -108,4 +108,11 @@ public class ViewManager {
 			e.printStackTrace();
 		}
         }
+	
+	public void submit(String accountNumber, char[] pin) {
+		
+		account = db.getAccount(Long.valueOf(accountNumber), Integer.valueOf(new String(pin)));
+			
+			
+	}
 }

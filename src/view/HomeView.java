@@ -2,11 +2,9 @@ package view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.Image;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
-import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
