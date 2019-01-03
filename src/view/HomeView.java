@@ -40,9 +40,7 @@ public class HomeView extends JPanel implements ActionListener {
 		//
 		// this is a placeholder for this view and should be removed once you start
 		// building the HomeView.
-		
-		this.add(new javax.swing.JLabel("HomeView", javax.swing.SwingConstants.CENTER));
-		
+				
 		this.initLogoutButton();
 		// TODO
 		//
