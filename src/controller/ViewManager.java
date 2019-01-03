@@ -95,7 +95,7 @@ public class ViewManager {
             int choice = JOptionPane.showConfirmDialog(
                 views,
                 "Are you sure?",
-                "Shutdown ATM",
+                "Cancel ATM Creation",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE
             );

@@ -65,8 +65,9 @@ public class CreateView extends JPanel implements ActionListener {
 		this.initStateField();
 		this.initZipField();
 		this.initDobField();
-		initPinField();
+		this.initPinField();
 		this.initLogoutButton();
+		this.initSubmitButton();
 //		this.initDobPicker(); // date of birth
 //		this.initPhoneField(); // TODO: make this formatted OR (this should be separated into the 3 segments of a phone number)
 //		this.initAddressField(); // TODO: formatting 
@@ -184,21 +185,21 @@ public class CreateView extends JPanel implements ActionListener {
 		this.add(pinField);
 	}
 	
-	private void initSubmitButton() {	
-		submitButton = new JButton("Login");
-		submitButton.setBounds(205, 180, 200, 35);
-		submitButton.addActionListener(this);
-		
-		this.add(submitButton);
-	}
-	
 	private void initLogoutButton() {
         logoutButton = new JButton("Cancel");
-        logoutButton.setBounds(50, 50, 50, 50);
+        logoutButton.setBounds(50, 420, 100, 50);
         logoutButton.addActionListener(this);
         
         this.add(logoutButton);
     }
+	
+	private void initSubmitButton() {	
+		submitButton = new JButton("Login");
+		submitButton.setBounds(160, 420, 100, 50);
+		submitButton.addActionListener(this);
+		
+		this.add(submitButton);
+	}
 	/*
 	 * CreateView is not designed to be serialized, and attempts to serialize will throw an IOException.
 	 * 
