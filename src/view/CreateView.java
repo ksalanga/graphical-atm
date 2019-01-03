@@ -56,7 +56,7 @@ public class CreateView extends JPanel implements ActionListener {
 		// building the CreateView.
 		
 		this.add(new javax.swing.JLabel("CreateView", javax.swing.SwingConstants.CENTER));
-		
+		this.setLayout(null);
 		
 		this.initFnameField();
 		this.initLnameField();
@@ -95,12 +95,12 @@ public class CreateView extends JPanel implements ActionListener {
 	
 	private void initLnameField() {
 		JLabel label = new JLabel("LastName", SwingConstants.LEFT);
-		label.setBounds(100, 100, 95, 35);
+		label.setBounds(100, 140, 95, 35);
 		label.setLabelFor(lName);
 		label.setFont(new Font("DialogInput", Font.BOLD, 14));
 		
 		lName = new JTextField(20);
-		lName.setBounds(205, 100, 200, 35);
+		lName.setBounds(205, 140, 200, 35);
 		
 		this.add(label);
 		this.add(lName);
@@ -108,12 +108,12 @@ public class CreateView extends JPanel implements ActionListener {
 	
 	private void initAddressField() {
 		JLabel label = new JLabel("Address", SwingConstants.LEFT);
-		label.setBounds(100, 100, 95, 35);
+		label.setBounds(100, 180, 95, 35);
 		label.setLabelFor(address);
 		label.setFont(new Font("DialogInput", Font.BOLD, 14));
 		
 		address = new JTextField(20);
-		address.setBounds(205, 100, 200, 35);
+		address.setBounds(205, 180, 200, 35);
 		
 		this.add(label);
 		this.add(address);
@@ -121,12 +121,12 @@ public class CreateView extends JPanel implements ActionListener {
 	
 	private void initCityField() {
 		JLabel label = new JLabel("City", SwingConstants.LEFT);
-		label.setBounds(100, 100, 95, 35);
+		label.setBounds(100, 220, 95, 35);
 		label.setLabelFor(city);
 		label.setFont(new Font("DialogInput", Font.BOLD, 14));
 		
 		city = new JTextField(20);
-		city.setBounds(205, 100, 200, 35);
+		city.setBounds(205, 220, 200, 35);
 		
 		this.add(label);
 		this.add(city);
@@ -134,12 +134,12 @@ public class CreateView extends JPanel implements ActionListener {
 	
 	private void initStateField() {
 		JLabel label = new JLabel("State", SwingConstants.LEFT);
-		label.setBounds(100, 100, 95, 35);
+		label.setBounds(100, 260, 95, 35);
 		label.setLabelFor(state);
 		label.setFont(new Font("DialogInput", Font.BOLD, 14));
 		
 		state = new JTextField(20);
-		state.setBounds(205, 100, 200, 35);
+		state.setBounds(205, 260, 200, 35);
 		
 		this.add(label);
 		this.add(state);
@@ -147,12 +147,12 @@ public class CreateView extends JPanel implements ActionListener {
 	
 	private void initZipField() {
 		JLabel label = new JLabel("ZIP", SwingConstants.LEFT);
-		label.setBounds(100, 100, 95, 35);
+		label.setBounds(100, 300, 95, 35);
 		label.setLabelFor(zip);
 		label.setFont(new Font("DialogInput", Font.BOLD, 14));
 		
 		zip = new JTextField(20);
-		zip.setBounds(205, 100, 200, 35);
+		zip.setBounds(205, 300, 200, 35);
 		
 		this.add(label);
 		this.add(zip);
@@ -160,12 +160,12 @@ public class CreateView extends JPanel implements ActionListener {
 	
 	private void initDobField() {
 		JLabel label = new JLabel("DOB", SwingConstants.LEFT);
-		label.setBounds(100, 100, 95, 35);
+		label.setBounds(100, 340, 95, 35);
 		label.setLabelFor(dob);
 		label.setFont(new Font("DialogInput", Font.BOLD, 14));
 		
 		dob = new JTextField(20);
-		dob.setBounds(205, 100, 200, 35);
+		dob.setBounds(205, 340, 200, 35);
 		
 		this.add(label);
 		this.add(dob);
@@ -173,12 +173,12 @@ public class CreateView extends JPanel implements ActionListener {
 	
 	private void initPinField() {
 		JLabel label = new JLabel("PIN", SwingConstants.LEFT);
-		label.setBounds(100, 140, 95, 35);
+		label.setBounds(100, 380, 95, 35);
 		label.setLabelFor(pinField);
 		label.setFont(new Font("DialogInput", Font.BOLD, 14));
 		
 		pinField = new JPasswordField(20);
-		pinField.setBounds(205, 140, 200, 35);
+		pinField.setBounds(205, 380, 200, 35);
 		
 		this.add(label);
 		this.add(pinField);
